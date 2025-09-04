@@ -1,0 +1,169 @@
+/* Contenedor principal con overflow hidden */
+.hero-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 0;
+  left: 0;                          
+  right: 0;
+  background: linear-gradient(135deg, 
+    #6B1E47 0%,     
+    #8B2C5B 25%,    
+    #4A1E3A 50%,    
+    #6A1B5A 75%,    
+    #7B2D5C 100%    
+  );
+
+  height: 100vh;      
+  color: white;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.45rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+
+.hero-container .container-fluid {
+  padding-top: 80px;
+}
+
+/* Contenedor de burbujas */
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+  z-index: 1;
+}
+
+/* Burbuja individual */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, 
+    rgba(255, 215, 0, 0.4),      
+    rgba(255, 255, 255, 0.6),    
+    rgba(255, 223, 186, 0.5),    
+    rgba(255, 215, 0, 0.3)       
+  );
+  box-shadow: 
+    0 0 40px rgba(255, 215, 0, 0.4),        
+    inset 0 0 25px rgba(255, 255, 255, 0.4), 
+    0 0 60px rgba(255, 223, 186, 0.3);            
+  backdrop-filter: blur(4px);
+  animation: float-up linear infinite;
+}
+
+/* Animación de flotación */
+@keyframes float-up {
+  0% {
+    transform: translateY(100vh) scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(50vh) scale(1.1) rotate(180deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-300px) scale(0.5) rotate(360deg); 
+    opacity: 0;
+  }
+}
+
+/* Burbujas grandes */
+.bubble:nth-child(1) { width: 60px; height: 60px; left: 5%; animation-duration: 9s; animation-delay: 0s; }
+.bubble:nth-child(2) { width: 40px; height: 40px; left: 12%; animation-duration: 7s; animation-delay: 2s; }
+.bubble:nth-child(3) { width: 80px; height: 80px; left: 20%; animation-duration: 11s; animation-delay: 1s; }
+.bubble:nth-child(4) { width: 50px; height: 50px; left: 28%; animation-duration: 8s; animation-delay: 3s; }
+.bubble:nth-child(5) { width: 35px; height: 35px; left: 36%; animation-duration: 10s; animation-delay: 0.5s; }
+.bubble:nth-child(6) { width: 45px; height: 45px; left: 44%; animation-duration: 9.5s; animation-delay: 4s; }
+.bubble:nth-child(7) { width: 65px; height: 65px; left: 52%; animation-duration: 12s; animation-delay: 5s; }
+.bubble:nth-child(8) { width: 30px; height: 30px; left: 60%; animation-duration: 7.5s; animation-delay: 1.5s; }
+.bubble:nth-child(9) { width: 55px; height: 55px; left: 68%; animation-duration: 8.5s; animation-delay: 6s; }
+.bubble:nth-child(10) { width: 70px; height: 70px; left: 76%; animation-duration: 10.5s; animation-delay: 2.5s; }
+.bubble:nth-child(11) { width: 25px; height: 25px; left: 84%; animation-duration: 9s; animation-delay: 7s; }
+.bubble:nth-child(12) { width: 75px; height: 75px; left: 92%; animation-duration: 13s; animation-delay: 3.5s; }
+
+/* Contenido por encima */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Efecto de brillo adicional */
+.bubble::before {
+  content: '';
+  position: absolute;
+  top: 12%;
+  left: 18%;
+  width: 45%;
+  height: 45%;
+  background: radial-gradient(circle, 
+    rgba(255, 215, 0, 0.7) 0%, 
+    rgba(255, 255, 255, 0.5) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+}
+
+.btn-hero {
+  background: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.btn-hero:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 35px rgba(255, 215, 0, 0.25);
+  background: rgba(255, 255, 255, 0.07);
+  color: #FFD700;
+  text-decoration: none;
+  border-color: #FFD700;
+}

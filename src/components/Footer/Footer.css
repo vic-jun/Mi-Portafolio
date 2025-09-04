@@ -1,0 +1,35 @@
+.footer-custom {
+  background: linear-gradient(90deg, #2a1020 0%, #3b192a 100%);
+  color: #f8f2f6;
+  box-shadow: 0 -4px 24px rgba(107, 44, 71, 0.12);
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  padding-top: 22px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #FFD700;
+  letter-spacing: 0.04em;
+}
+
+.footer-desc {
+  color: #e0cfe3;
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.footer-divider {
+  border-top: 1.5px solid #6b2c47;
+  width: 60%;
+  margin: 0 auto;
+  opacity: 0.25;
+}
+
+.footer-copy {
+  color: #bfa5c9;
+  font-size: 0.98rem;
+  letter-spacing: 0.03em;
+}

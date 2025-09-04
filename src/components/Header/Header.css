@@ -1,0 +1,166 @@
+.navbar-custom {
+  background: rgba(0, 0, 0, 0.3) !important;   
+  backdrop-filter: blur(10px);                      
+  -webkit-backdrop-filter: blur(10px);              
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1); /* Línea dorada más visible */
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1050 !important;
+  width: 100% !important;
+}
+
+.navbar-custom .container {
+  padding-left: 20px !important;   
+  padding-right: 20px !important;  
+  max-width: none !important;      
+}
+
+/* Logo con más contraste */
+.navbar-brand {
+  color: #FFD700 !important;                        
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  transition: color 0.3s ease;
+  margin-right: 2rem !important;
+}
+
+.navbar-brand:hover {
+  color: #FFDAB9 !important;                      
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+/* Enlaces con mejor contraste */
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;     
+  font-weight: 600;                                  /* Más bold */
+  padding: 0.5rem 1.2rem !important;
+  margin: 0 0.2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);       /* Sombra para contraste */
+}
+
+.navbar-nav .nav-link:hover {
+  background: rgba(255, 215, 0, 0.15);
+  color: #FFD700 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);    /* Glow al hover */
+}
+
+/* Línea subrayada más visible */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FFD700, #FFDAB9);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);      /* Glow en la línea */
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 80%;
+}
+
+/* Responsive mejorado */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(74, 30, 58, 0.95);              /* Más opaco en móvil */
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.navbar-toggler {
+  border: 2px solid rgba(255, 215, 0, 0.5) !important;
+  padding: 4px 8px !important;
+  border-radius: 8px !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-toggler:hover {
+  border-color: #FFD700 !important;
+  background: rgba(255, 215, 0, 0.1) !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3) !important;
+  transform: translateY(-1px) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25) !important;
+}
+
+/* Icono hamburguesa personalizado */
+.navbar-toggler-icon {
+  background-image: none !important;
+  width: 22px !important;
+  height: 16px !important;
+  position: relative !important;
+}
+
+/* Crear las 3 líneas del hamburguesa */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon {
+  background: linear-gradient(90deg, #FFD700, #FFDAB9) !important;
+  height: 2px !important;
+  border-radius: 2px !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute !important;
+  left: 0 !important;
+  width: 100% !important;
+}
+
+.navbar-toggler-icon::before {
+  top: -6px !important;
+}
+
+.navbar-toggler-icon::after {
+  top: 6px !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::before {
+  transform: translateY(-2px) !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::after {
+  transform: translateY(2px) !important;
+}
+
+.logo-vj svg {
+  display: block;
+}
+
+.logo-vj text {
+  font-family: 'Dancing Script', cursive;
+}
+
+.logo-text {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #FFD700;
+  letter-spacing: 0.03em;
+}

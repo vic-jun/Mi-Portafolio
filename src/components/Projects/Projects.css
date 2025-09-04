@@ -1,0 +1,98 @@
+.projects-section {
+  background: linear-gradient(135deg, 
+    #6B1E47 0%,     /* Violeta oscuro */
+    #8B2C5B 25%,    /* Violeta medio */
+    #4A1E3A 50%,    /* Violeta muy oscuro */
+    #6A1B5A 75%,    /* Violeta profundo */
+    #7B2D5C 100%    /* Violeta suave */
+  );
+  padding: 35px 0 40px 0;
+  color: #fff;
+}
+
+.projects-section .display-5 {
+  color: #FFD700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.18);
+}
+
+.projects-section .lead {
+  color: #FFD6E0;
+}
+
+.projects-subtitle {
+  color: #f8f2f6;
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.93);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(107, 44, 71, 0.13);
+  border: none;
+  color: #2C1810;
+  transition: transform 0.25s, box-shadow 0.25s;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(107, 44, 71, 0.23);
+}
+
+.project-card .card-title {
+  color: #6B2C47;
+  font-weight: 700;
+}
+
+.project-card .card-text {
+  color: #311122 !important;
+}
+
+.project-card .btn-outline-dark {
+  border-color: #6B2C47;
+  color: #6B2C47;
+  background: transparent;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.project-card .btn-outline-dark:hover {
+  background: #6B2C47;
+  color: #FFD700;
+}
+
+.project-card .btn-primary {
+  background: #d48ca6;
+  color: #4A1B33;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.project-card .btn-primary:hover {
+  background: #b86b8b;
+  color: #fff;
+}
+
+.tech-badge {
+  background: linear-gradient(45deg, #F8F9FA, #E9ECEF) !important;
+  color: #495057 !important;
+  border: 1px solid rgba(107, 44, 71, 0.2) !important;
+  padding: 6px 12px !important;
+  border-radius: 15px !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  margin: 3px !important;
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  background: linear-gradient(45deg, #6B2C47, #8B4B6B) !important;
+  color: white !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(107, 44, 71, 0.2);
+}

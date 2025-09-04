@@ -1,0 +1,37 @@
+.contact-section {
+  background: linear-gradient(135deg, #f8f2f6 0%, #fbeff7 100%);
+  min-height: 100vh;
+  padding: 20px 0 40px 0;
+  color: #4A1B33;
+}
+
+.contact-item {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(107, 44, 71, 0.08);
+  padding: 2rem 1rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.contact-item:hover {
+  box-shadow: 0 8px 32px rgba(107, 44, 71, 0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.contact-section .btn-outline-primary {
+  border-color: #8B4B6B;
+  color: #8B4B6B;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-section .btn-outline-primary:hover {
+  background: #8B4B6B;
+  color: #fff;
+}
+
+.contact-description {
+  font-size: 1.45rem;
+  line-height: 1.7;
+}
