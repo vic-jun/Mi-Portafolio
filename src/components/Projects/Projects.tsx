@@ -1,5 +1,5 @@
 import React from "react";
-import finanzapp from '../../assets/FinanzApp.jpg';
+import finanzapp from '../../assets/Finanzapp.jpg';
 import ecommerce from '../../assets/E-commerce.jpg';
 import './Projects.css';
 
