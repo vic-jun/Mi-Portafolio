@@ -1,5 +1,5 @@
 import React from 'react'
-import fotoVic from '../../assets/foto-vic.jpg'
+import fotoVic from '../../assets/foto-vic.jpeg'
 import './About.css'
 
 const About: React.FC = () => {

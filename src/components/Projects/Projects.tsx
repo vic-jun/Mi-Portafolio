@@ -1,6 +1,7 @@
 import React from "react";
 import finanzapp from '../../assets/Finanzapp.jpg';
 import ecommerce from '../../assets/E-commerce.jpg';
+import looma from '../../assets/Looma.png';
 import './Projects.css';
 
 const Projects: React.FC = () => {
@@ -19,46 +20,50 @@ const Projects: React.FC = () => {
         {/* Grid de proyectos */}
         <div className="row g-4 justify-content-center">
           {/* Proyecto 1 */}
-          {/*
           <div className="col-lg-4 col-md-6">
             <div className="card project-card h-100 shadow-sm border-0">
               <img 
-                src="https://via.placeholder.com/400x250/007bff/ffffff?text=Portfolio+Personal" 
+                src={looma} 
                 className="card-img-top" 
-                alt="Proyecto Portfolio Personal"
-                style={{ height: '200px', objectFit: 'cover' }}
+                alt="Looma"
+                style={{ height: '300px', objectFit: 'cover' }}
               />
               
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title">Portfolio Personal</h5>
+                <h5 className="card-title">Looma</h5>
                 <p className="card-text text-muted">
-                  Portfolio responsivo desarrollado con React y TypeScript. 
-                  Incluye navegación smooth, formulario de contacto y diseño moderno.
+                  Aplicación web para la lectura y escritura de obras personales. 
+                  Permite publicar obras, leer las de otros usuarios, comprar y vender las mismas.
                 </p>
                 
                 <div className="mb-3">
                   <span className="tech-badge">React</span>
                   <span className="tech-badge">TypeScript</span>
-                  <span className="tech-badge">Bootstrap</span>
+                  <span className="tech-badge">Java</span>
+                  <span className="tech-badge">PostgreSQL</span>
                 </div>
                 
                 <div className="mt-auto d-flex gap-2">
                   <a 
-                  href="#" 
+                  href="https://github.com/RamiroValdez/looma-front.git" 
                   className="btn btn-outline-dark btn-sm flex-fill"
                   target="_blank"
                   rel="noopener noreferrer"
                   >
-                    📂 Código
+                    📂 Código Front
                   </a>
-                  <a href="#" className="btn btn-primary btn-sm flex-fill">
-                    👁️ Demo
+                  <a 
+                  href="https://github.com/RamiroValdez/looma-core.git" 
+                  className="btn btn-outline-dark btn-sm flex-fill"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                    📂 Código Back
                   </a>
                 </div>
               </div>
             </div>
-          </div>
-           */}
+          </div>    
 
           {/* Proyecto 2 */}
           <div className="col-lg-4 col-md-6">
